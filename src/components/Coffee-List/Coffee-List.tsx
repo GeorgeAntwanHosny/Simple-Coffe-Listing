@@ -17,7 +17,7 @@ const CoffeeList:React.FC<CoffeeListProps>= ({coffeeData})=>{
      }
    }
 
-    return (
+    return ( 
      <>
         <div className="coffeeListContainer">    
          {coffeeDataFiltred().map((coffee)=><CoffeeItem coffee={coffee} key={coffee.id}/>)}
