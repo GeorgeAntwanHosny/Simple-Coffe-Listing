@@ -6,11 +6,11 @@
     justify-items: center;
     align-items: center;
     gap: 32px 12px;
-    @media (min-width:641px) and (max-width: 1025px){
+    @media (min-width:841px) and (max-width: 1025px){
         grid-template-columns: repeat(2, 275px);
         grid-template-rows: repeat(3, 1fr);
     }
-    @media (min-width:340px) and (max-width: 641px){
+    @media (min-width:319px) and (max-width: 841px){
         grid-template-columns: repeat(1, 275px);
         grid-template-rows: repeat(3, 1fr);
     }

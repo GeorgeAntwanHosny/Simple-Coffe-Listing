@@ -24,18 +24,18 @@ body {
     border-radius: 10px;
     position: absolute;
     top: 160px;
-    @media (min-width:320px) and (max-width:641px){
+    @media (min-width:319px) and (max-width:841px){
       padding-top: 10px;
       background-color: #1b1d1f;
-      width: 64vw;
+      // width: 64vw;
       height: auto;
       justify-self: center;
       border-radius: 10px;
       position: absolute;
-      top: 85px;
+      top: 50px;
      
     }
-    @media (min-width:641px) and (max-width:1025px){
+    @media (min-width:841px) and (max-width:1025px){
       padding-top: 10px;
       background-color: #1b1d1f;
       width: 69vw;
@@ -43,8 +43,7 @@ body {
       justify-self: center;
       border-radius: 10px;
       position: absolute;
-      top: 85px;
-     
+      top: 132px;
     }
     
   }
@@ -96,16 +95,16 @@ body {
     text-align: center;
     font-size: 16px;
     @include dm-sans(600);
-    @media (min-width:320px) and (max-width:641px){
+    @media (min-width:319px) and (max-width:841px){
      width: 57vw;
     }
     
   }
-  @media (min-width:320px) and (max-width:641px){
-    background-position: 130% 1%;
+  @media (min-width:319px) and (max-width:841px){
+    background-position: 41vw 1%;
     grid-template-rows: 30px auto 85px;
   }
-  @media (min-width:641px) and (max-width:1025px){
+  @media (min-width:841px) and (max-width:1025px){
     background-position: 79% 1%;
     grid-template-rows: 30px auto 85px;
   }
