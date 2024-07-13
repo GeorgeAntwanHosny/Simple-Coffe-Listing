@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import CoffeeList from "../components/Coffee-List/Coffee-List";
 import { getAllCoffee } from "../services/coffee-service";
 import { Coffee } from "../models/Coffee";

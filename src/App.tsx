@@ -2,10 +2,14 @@ import { createContext, useState } from 'react';
 import './App.css'
 import './app.scss'
 import CoffeeView from './views/Coffee-View'
-export const FilterProductContext = createContext({
-  filterValue:'All',
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  setfilterValue:(a: string) => {},
+interface FilterProductContextType {
+  filterValue: string;
+  setFilterValue: (value: string) => void;
+}
+
+export const FilterProductContext = createContext<FilterProductContextType>({
+  filterValue: 'All',
+  setFilterValue: () => {}, // No-op function as default
 });
 function App() {
   const [filterProduct, setFilterProduct] = useState<string>('All');
@@ -13,7 +17,7 @@ function App() {
     setFilterProduct(value);
   }
   return (
-    <FilterProductContext.Provider value={{ filterValue: filterProduct, setfilterValue: changeFilterValue }}>
+    <FilterProductContext.Provider value={{ filterValue: filterProduct, setFilterValue: changeFilterValue }}>
     <div className='MainContainer'>
      <div>
        <div className="intro_container">
