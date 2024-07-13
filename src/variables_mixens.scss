@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+$color_1: #1b1d1f;
+$color_2: #111315;
+$color_3: #6f757c;
+$color_4: #bee3cc;
+$color_5: #fef7ee;
+$color_6: #f6c768;
+$color_7: #ed735d;
+@mixin dm-sans($weight:400){
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: $weight;
+  font-style: normal;
+}

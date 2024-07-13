@@ -1,0 +1,112 @@
+@import './variables_mixens.scss';
+:root {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  // width: 100vw;
+  height: 100vh;
+  background-image: url(../src/assets/images/bg-cafe.jpg);
+  background-color: $color_2;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  &  div.MainContainer {
+    padding-top: 10px;
+    background-color: #1b1d1f;
+    width: 85vw;
+    height: auto;
+    justify-self: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 160px;
+    @media (min-width:320px) and (max-width:641px){
+      padding-top: 10px;
+      background-color: #1b1d1f;
+      width: 64vw;
+      height: auto;
+      justify-self: center;
+      border-radius: 10px;
+      position: absolute;
+      top: 85px;
+     
+    }
+    @media (min-width:641px) and (max-width:1025px){
+      padding-top: 10px;
+      background-color: #1b1d1f;
+      width: 69vw;
+      height: auto;
+      justify-self: center;
+      border-radius: 10px;
+      position: absolute;
+      top: 85px;
+     
+    }
+    
+  }
+  & > div:first-child {
+    display: grid;
+  justify-items: center;
+  align-items: center;
+    
+  }
+}
+.intro_container {
+  padding-top: 65px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  grid-template-rows: 30px 100px 85px;
+  background-image: url(../src/assets/images/vector.svg);
+  background-repeat: no-repeat;
+  background-position: 63% 1%;
+ 
+  &>div:nth-child(2){
+    display: grid;
+    grid-auto-flow: column;
+    gap: 12px;
+  }
+  &>div button{
+    background-color: $color_1;
+    color: $color_5;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    @include dm-sans(400)
+  }
+  &>div button.active{
+    background-color: $color_3;
+    padding: 10px 15px;
+    border-radius: 8px;
+  }
+  & > p:first-child {
+    color: $color_5;
+    font-size: 32px;
+    @include dm-sans(500)
+  }
+  & > p:nth-child(2) {
+    color: $color_3;
+    width: 500px;
+    text-align: center;
+    font-size: 16px;
+    @include dm-sans(600);
+    @media (min-width:320px) and (max-width:641px){
+     width: 57vw;
+    }
+    
+  }
+  @media (min-width:320px) and (max-width:641px){
+    background-position: 130% 1%;
+    grid-template-rows: 30px auto 85px;
+  }
+  @media (min-width:641px) and (max-width:1025px){
+    background-position: 79% 1%;
+    grid-template-rows: 30px auto 85px;
+  }
+}
